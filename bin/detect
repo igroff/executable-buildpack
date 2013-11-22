@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+if [ -x "$1/ar-start" ]; then
+  echo "Approuter Enabled Application"
+  exit 0
+else
+  exit 1
+fi

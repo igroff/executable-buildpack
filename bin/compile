@@ -1,0 +1,14 @@
+#! /usr/bin/env bash
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+# ar-install is optional 
+if [ -f "${BUILD_DIR}/ar-install" ]; then
+  if [ ! -x "${BUILD_DIR}/ar-install" ]; then
+    echo "found non-executable ar-install file, you'll want to fix this"
+    chmod +x "${BUILD_DIR}/ar-install"
+  fi
+  
+  ${BUILD_DIR}/ar-install
+fi
