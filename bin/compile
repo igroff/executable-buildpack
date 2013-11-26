@@ -11,5 +11,5 @@ if [ -f "${BUILD_DIR}/ar-install" ]; then
   fi
   echo "Build Dir: ${BUILD_DIR}"
   echo "Cache Dir: ${CACHE_DIR}"  
-  ${BUILD_DIR}/ar-install
+  cd ${BUILD_DIR} && ./ar-install
 fi
