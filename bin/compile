@@ -9,6 +9,7 @@ if [ -f "${BUILD_DIR}/ar-install" ]; then
     echo "found non-executable ar-install file, you'll want to fix this"
     chmod +x "${BUILD_DIR}/ar-install"
   fi
-  
+  echo "Build Dir: ${BUILD_DIR}"
+  echo "Cache Dir: ${CACHE_DIR}"  
   ${BUILD_DIR}/ar-install
 fi
