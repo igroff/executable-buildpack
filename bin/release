@@ -1,7 +1,9 @@
 #! /usr/bin/env bash
 
+BUILD_DIR=$1
+
 cat <<EOF
 ---
 default_process_types:
-  web: ar-start
+  web: ${BUILD_DIR}/ar-start
 EOF
