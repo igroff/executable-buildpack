@@ -26,7 +26,7 @@ repository.  That's it, really.
 
 #### What else does it do?
 
-Nothing, really.  All the buildpack does is check for the file you need, the compile step is a no op.
+Nothing. All the buildpack does is check for the file you need, the compile step is a no op.
 It really desn't do anything other than check for the file, and set things up so it's started at the
 appropriate time.
 
