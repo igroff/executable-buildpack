@@ -9,7 +9,7 @@ in the environment, and binds an HTTP server to that port, other than that the s
 #### Really?
 
 Yup, that's all there is to it. So let's say you have a repository called echo in your 
-home directory, if you can do this
+home directory, if you can do this:
 
       15:14:20 ~
       $ cd echo/
