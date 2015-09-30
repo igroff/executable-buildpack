@@ -2,14 +2,5 @@
 
 BUILD_DIR=$1
 CACHE_DIR=$2
-
-# ar-install is optional 
-if [ -f "${BUILD_DIR}/ar-install" ]; then
-  if [ ! -x "${BUILD_DIR}/ar-install" ]; then
-    echo "found non-executable ar-install file, you'll want to fix this"
-    chmod +x "${BUILD_DIR}/ar-install"
-  fi
-  echo "Build Dir: ${BUILD_DIR}"
-  echo "Cache Dir: ${CACHE_DIR}"  
-  cd ${BUILD_DIR} && ./ar-install
-fi
+# I don't do jack, so it's always good
+exit 0
